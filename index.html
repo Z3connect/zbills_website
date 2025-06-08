@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Billls - Smart Billing App for Tamil Nadu Businesses | Free Invoice Software</title>
+    <meta name="description" content="Z Billls - The best billing app for Tamil Nadu local businesses. Create GST invoices in seconds, supports Tamil & English. Free download for small shops, tea stalls, grocery stores.">
+    <meta name="keywords" content="billing app Tamil Nadu, invoice software India, GST billing app, small business POS system, Tamil billing software">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 25px 25px, rgba(255,255,255,0.08) 1px, transparent 0),
+                radial-gradient(circle at 75px 75px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 100px 100px;
+        }
+        
+        .feature-card, .pricing-card {
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .feature-card:hover, .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px -5px rgba(92, 64, 51, 0.1);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(-1deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body class="bg-[#fcf9f4] text-[#5c4033]">
+    <!-- Navigation -->
+    <nav class="bg-[#fcf9f4]/80 backdrop-blur-lg sticky top-0 z-50 border-b border-[#5c4033]/10">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-[#5c4033] rounded-lg flex items-center justify-center">
+                        <i data-lucide="receipt" class="text-[#fcf9f4] w-6 h-6"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-[#5c4033]">Z Billls</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-[#5c4033] hover:text-[#c08552] transition-colors">Features</a>
+                    <a href="#pricing" class="text-[#5c4033] hover:text-[#c08552] transition-colors">Pricing</a>
+                    <a href="#testimonials" class="text-[#5c4033] hover:text-[#c08552] transition-colors">Reviews</a>
+                    <a href="#contact" class="text-[#5c4033] hover:text-[#c08552] transition-colors">Support</a>
+                    <button class="bg-[#5c4033] text-white px-6 py-2 rounded-lg hover:bg-[#4a3f35] transition-colors font-medium">
+                        Download Free
+                    </button>
+                </div>
+                
+                <button class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6 text-[#5c4033]"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[#c08552] hero-pattern relative overflow-hidden">
+        <div class="container mx-auto px-6 py-20 lg:py-32">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 text-white mb-12 lg:mb-0">
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Z Billls – The Smart Billing App for <span class="text-[#fcf9f4] opacity-80">Tamil Nadu</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-4 opacity-90">
+                        Free & Paid Billing System for Small and Local Businesses
+                    </p>
+                    <p class="text-lg mb-8 opacity-80">
+                        Say goodbye to manual billing struggles – Create invoices in seconds with Z Billls.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-white text-[#5c4033] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
+                            <i data-lucide="download" class="w-5 h-5"></i>
+                            <span>Download for Free</span>
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[#5c4033] transition-colors flex items-center justify-center space-x-2">
+                            <i data-lucide="play" class="w-5 h-5"></i>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-80 h-96 bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl shadow-black/20 animate-float">
+                            <div class="p-6">
+                                <div class="bg-gray-100 rounded-xl h-16 mb-4 flex items-center justify-center">
+                                    <span class="text-gray-600 font-semibold">Z Billls Invoice</span>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="bg-[#c08552]/30 rounded-lg h-8"></div>
+                                    <div class="bg-[#a3b18a]/30 rounded-lg h-8"></div>
+                                    <div class="bg-[#5c4033]/20 rounded-lg h-8"></div>
+                                    <div class="bg-[#c08552]/40 rounded-lg h-8"></div>
+                                    <div class="bg-[#c08552]/80 rounded-lg h-12 flex items-center justify-center">
+                                        <span class="text-white font-bold">₹2,450</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-[#a3b18a] rounded-full flex items-center justify-center animate-pulse-slow">
+                            <i data-lucide="zap" class="w-8 h-8 text-white"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-12 h-12 bg-[#fcf9f4] rounded-full flex items-center justify-center animate-pulse-slow shadow-lg">
+                            <i data-lucide="check" class="w-6 h-6 text-[#a3b18a]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems & Solutions -->
+    <section class="py-20 bg-[#f8f5f0]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5c4033] mb-4">Why Tamil Nadu Businesses Need Z Billls</h2>
+                <p class="text-xl text-[#5c4033]/70">Transform your billing process from chaos to clarity</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Problems -->
+                <div class="bg-[#c08552]/5 rounded-2xl p-8 border border-[#c08552]/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="x" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#c08552]">Problems Without a Billing System</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-[#c08552] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80">Manual records or spreadsheets lead to <strong>errors and time waste</strong></span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="clock" class="w-5 h-5 text-[#c08552] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80"><strong>Late payments</strong> due to lack of reminders</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="hard-drive-off" class="w-5 h-5 text-[#c08552] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80"><strong>No backup</strong> – risk of losing important billing data</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="trending-down" class="w-5 h-5 text-[#c08552] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80">Difficult to track <strong>daily sales, expenses, and profits</strong></span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="file-text" class="w-5 h-5 text-[#c08552] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80">Challenges in <strong>GST tax compliance and invoice formatting</strong></span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Solutions -->
+                <div class="bg-[#a3b18a]/5 rounded-2xl p-8 border border-[#a3b18a]/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#a3b18a] rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="check" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#6a7b4a]">What Z Billls Offers</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="zap" class="w-5 h-5 text-[#a3b18a] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80"><strong>Auto invoice creation</strong> in seconds</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="bell" class="w-5 h-5 text-[#a3b18a] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80"><strong>Payment reminders</strong> via SMS/WhatsApp</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="globe" class="w-5 h-5 text-[#a3b18a] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80"><strong>Tamil & English language support</strong></span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="file-check" class="w-5 h-5 text-[#a3b18a] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80"><strong>GST-ready invoices and reports</strong></span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i data-lucide="shield" class="w-5 h-5 text-[#a3b18a] mt-1 flex-shrink-0"></i>
+                            <span class="text-[#5c4033]/80">Works offline + <strong>cloud backup for safety</strong></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience -->
+    <section class="py-20 bg-[#fcf9f4]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5c4033] mb-4">Who Is Z Billls Built For?</h2>
+                <p class="text-xl text-[#5c4033]/70">Perfect for Tamil Nadu's vibrant local business community</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Local TN Businesses -->
+                <div class="bg-[#f8f5f0] rounded-2xl p-8 shadow-lg shadow-[#5c4033]/5 feature-card">
+                    <div class="w-16 h-16 bg-[#c08552] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="store" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#5c4033] mb-4">Tamil Nadu Local Businesses</h3>
+                    <ul class="space-y-2 text-[#5c4033]/80">
+                        <li>• Stationery shops</li>
+                        <li>• Tea stalls</li>
+                        <li>• Kirana & grocery stores</li>
+                        <li>• Fancy and general stores</li>
+                        <li>• Small traders and service providers</li>
+                    </ul>
+                </div>
+                
+                <!-- Other States -->
+                <div class="bg-[#f8f5f0] rounded-2xl p-8 shadow-lg shadow-[#5c4033]/5 feature-card">
+                    <div class="w-16 h-16 bg-[#5c4033] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="map" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#5c4033] mb-4">Other Indian States</h3>
+                    <ul class="space-y-2 text-[#5c4033]/80">
+                        <li>• Small businesses across India</li>
+                        <li>• Regional shops and stores</li>
+                        <li>• Local service providers</li>
+                        <li>• Growing enterprises</li>
+                    </ul>
+                </div>
+                
+                <!-- International -->
+                <div class="bg-[#f8f5f0] rounded-2xl p-8 shadow-lg shadow-[#5c4033]/5 feature-card">
+                    <div class="w-16 h-16 bg-[#a3b18a] rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="globe-2" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#5c4033] mb-4">International Markets</h3>
+                    <ul class="space-y-2 text-[#5c4033]/80">
+                        <li>• South Indian shops in UAE</li>
+                        <li>• Businesses in Malaysia</li>
+                        <li>• Stores in Singapore</li>
+                        <li>• New business owners worldwide</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-[#f8f5f0]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5c4033] mb-4">Top Features of Z Billls</h2>
+                <p class="text-xl text-[#5c4033]/70">Everything you need to run your business smoothly</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Free Plan -->
+                <div class="bg-[#a3b18a]/10 rounded-2xl p-8 border border-[#a3b18a]/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#a3b18a] rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="gift" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#6a7b4a]">🔓 Free Plan</h3>
+                    </div>
+                    
+                    <ul class="space-y-4 text-[#5c4033]/90">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="infinity" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Unlimited bills</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="users" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Customer info saving</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="languages" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Tamil/English billing</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="smartphone" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>1 device access</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Paid Plan -->
+                <div class="bg-[#c08552]/10 rounded-2xl p-8 border border-[#c08552]/20">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mr-4">
+                            <i data-lucide="crown" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#a0683a]">💼 Paid Plan</h3>
+                    </div>
+                    
+                    <ul class="space-y-4 text-[#5c4033]/90">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="users-2" class="w-5 h-5 text-[#c08552]"></i>
+                            <span>Multi-user support (up to 5 devices)</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="palette" class="w-5 h-5 text-[#c08552]"></i>
+                            <span>Business branding on invoices</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="bar-chart" class="w-5 h-5 text-[#c08552]"></i>
+                            <span>Automated reports & analytics</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="cloud" class="w-5 h-5 text-[#c08552]"></i>
+                            <span>Cloud data backup</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="headphones" class="w-5 h-5 text-[#c08552]"></i>
+                            <span>Premium customer support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-[#fcf9f4]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5c4033] mb-4">Real Stories from Tamil Nadu</h2>
+                <p class="text-xl text-[#5c4033]/70">See how Z Billls is transforming local businesses</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#f8f5f0] rounded-2xl p-8 shadow-lg shadow-[#5c4033]/5">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-[#c08552] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">R</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#5c4033]">Raja</h4>
+                            <p class="text-[#5c4033]/70">Tea Stall, Madurai</p>
+                        </div>
+                    </div>
+                    <p class="text-[#5c4033]/90 italic">
+                        "Z Billls is a game-changer for small shops like ours. I can create a bill even during rush hours."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-[#f8f5f0] rounded-2xl p-8 shadow-lg shadow-[#5c4033]/5">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-[#5c4033] rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-xl">J</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#5c4033]">Jayanthi</h4>
+                            <p class="text-[#5c4033]/70">Jayanthi Stores, Coimbatore</p>
+                        </div>
+                    </div>
+                    <p class="text-[#5c4033]/90 italic">
+                        "Earlier I was using paper to note sales. Now I track everything with Z Billls – it's so simple."
+                    </p>
+                    <div class="flex mt-4">
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-[#c08552] fill-current"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-[#f8f5f0]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5c4033] mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-xl text-[#5c4033]/70">Choose the plan that works best for your business</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free Plan -->
+                <div class="bg-[#fcf9f4] border border-[#5c4033]/10 rounded-2xl p-8 pricing-card">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-[#5c4033] mb-2">Free</h3>
+                        <div class="text-4xl font-bold text-[#5c4033] mb-2">₹0</div>
+                        <p class="text-[#5c4033]/70">/month</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-[#5c4033]/90">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Unlimited invoices</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>1 user</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Tamil/English support</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Offline billing</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-[#5c4033] text-white py-3 rounded-lg font-semibold hover:bg-[#4a3f35] transition-colors">
+                        Start Free
+                    </button>
+                </div>
+                
+                <!-- Starter Plan -->
+                <div class="bg-[#fcf9f4] border-2 border-[#c08552] rounded-2xl p-8 pricing-card relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-[#c08552] text-white px-4 py-2 rounded-full text-sm font-semibold">Popular</span>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-[#5c4033] mb-2">Starter</h3>
+                        <div class="text-4xl font-bold text-[#5c4033] mb-2">₹99</div>
+                        <p class="text-[#5c4033]/70">/month</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-[#5c4033]/90">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>3 users</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Auto backup</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Payment reminders</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Basic reports</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-[#c08552] text-white py-3 rounded-lg font-semibold hover:bg-[#a0683a] transition-colors">
+                        Choose Starter
+                    </button>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="bg-[#fcf9f4] border border-[#5c4033]/10 rounded-2xl p-8 pricing-card">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-[#5c4033] mb-2">Pro</h3>
+                        <div class="text-4xl font-bold text-[#5c4033] mb-2">₹299</div>
+                        <p class="text-[#5c4033]/70">/month</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-[#5c4033]/90">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>5+ users</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Business logo on invoice</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Premium support</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="check" class="w-5 h-5 text-[#a3b18a]"></i>
+                            <span>Advanced analytics</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-[#5c4033] text-white py-3 rounded-lg font-semibold hover:bg-[#4a3f35] transition-colors">
+                        Choose Pro
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Section -->
+    <section class="py-20 bg-[#c08552]/10">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#a0683a] mb-4">The Risk of Not Using Billing Software</h2>
+                <p class="text-xl text-[#5c4033]/70">Don't let manual processes hold your business back</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#fcf9f4] rounded-xl p-6 shadow-lg shadow-[#5c4033]/5">
+                    <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="alert-triangle" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Error-prone Manual Billing</h3>
+                    <p class="text-[#5c4033]/70">Mistakes in calculations and record keeping</p>
+                </div>
+                
+                <div class="bg-[#fcf9f4] rounded-xl p-6 shadow-lg shadow-[#5c4033]/5">
+                    <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="clock" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Payment Delays</h3>
+                    <p class="text-[#5c4033]/70">No automated reminder system</p>
+                </div>
+                
+                <div class="bg-[#fcf9f4] rounded-xl p-6 shadow-lg shadow-[#5c4033]/5">
+                    <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="hard-drive-off" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Data Loss Risk</h3>
+                    <p class="text-[#5c4033]/70">No backup for important records</p>
+                </div>
+                
+                <div class="bg-[#fcf9f4] rounded-xl p-6 shadow-lg shadow-[#5c4033]/5">
+                    <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="trending-down" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Poor Tracking</h3>
+                    <p class="text-[#5c4033]/70">Can't monitor profits and expenses</p>
+                </div>
+                
+                <div class="bg-[#fcf9f4] rounded-xl p-6 shadow-lg shadow-[#5c4033]/5">
+                    <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="file-x" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Compliance Issues</h3>
+                    <p class="text-[#5c4033]/70">GST and tax reporting challenges</p>
+                </div>
+                
+                <div class="bg-[#fcf9f4] rounded-xl p-6 shadow-lg shadow-[#5c4033]/5">
+                    <div class="w-12 h-12 bg-[#c08552] rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="user-x" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Unprofessional Image</h3>
+                    <p class="text-[#5c4033]/70">Poor invoice presentation to customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#f8f5f0]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5c4033] mb-4">Customer Support</h2>
+                <p class="text-xl text-[#5c4033]/70">We're here to help in Tamil and English</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#a3b18a] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">WhatsApp Support</h3>
+                    <p class="text-[#5c4033]/70">Quick support in Tamil & English</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#5c4033] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="mail" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Email Support</h3>
+                    <p class="text-[#5c4033]/70">Detailed help via email</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#c08552] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Based in Tamil Nadu</h3>
+                    <p class="text-[#5c4033]/70">Team located in Nagercoil</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#a0683a] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <i data-lucide="clock" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="font-bold text-[#5c4033] mb-2">Available Hours</h3>
+                    <p class="text-[#5c4033]/70">Mon-Sat, 9 AM – 9 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-[#5c4033] hero-pattern">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Ready to Transform Your Business?</h2>
+            <p class="text-xl text-white opacity-80 mb-8">Join thousands of Tamil Nadu businesses using Z Billls</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-[#5c4033] px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
+                    <i data-lucide="download" class="w-5 h-5"></i>
+                    <span>Download Z Billls Free</span>
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[#5c4033] transition-colors flex items-center justify-center space-x-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span>Contact Support</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#4a3f35] text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-[#c08552] rounded-lg flex items-center justify-center">
+                            <i data-lucide="receipt" class="text-[#4a3f35] w-6 h-6"></i>
+                        </div>
+                        <span class="text-2xl font-bold text-[#fcf9f4]">Z Billls</span>
+                    </div>
+                    <p class="text-white/70">Smart billing app for Tamil Nadu's local businesses</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-[#fcf9f4]">Features</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li>Invoice Creation</li>
+                        <li>Tamil Support</li>
+                        <li>GST Compliance</li>
+                        <li>Cloud Backup</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-[#fcf9f4]">Support</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li>Help Center</li>
+                        <li>WhatsApp Support</li>
+                        <li>Email Support</li>
+                        <li>Video Tutorials</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-[#fcf9f4]">Company</h4>
+                    <ul class="space-y-2 text-white/70">
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-8 pt-8 text-center text-white/70">
+                <p>© 2024 Z Billls. Made with ❤️ in Tamil Nadu for local businesses.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
